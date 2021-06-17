@@ -3,6 +3,28 @@
     <title>HTML Trials</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+    *{
+        box-sizing: border-box;
+    }
+    .left {
+        background-color: darkgrey;
+        padding: 20px;
+        float: left;
+        width: 20%;
+    }
+    .main{
+        background-color: darkslategrey;
+        padding: 20px;
+        float: left;
+        width: 60%;
+    }
+    .right{
+        background-color: grey ;
+        padding: 20px;
+        float: left;
+        width: 20%;
+    }
+
     table, th, td{
       border: 1px solid black;
       border-collapse: collapse;
@@ -16,7 +38,7 @@
         padding: 20px;
     }
     @media screen and (max-width :200px){
-        .names{
+        .left, .main, .right{
             width:100%;
         }
     }
@@ -60,6 +82,18 @@
 <div class=" names">
 <h1> Nyambu</h1>
 <p> Nyambu is the third and last born</p>
+<br>
+<div class="left">
+<p> Left menu</p>
+</div>
+
+<div class="main">
+<p> Main content</p>
+</div>
+<div class="right">
+<p> Right content</p>
+</div>
+
 </div>
     <img src="Images/resized smiley face.jpg" width="145"height="200" alt="Beautiful Robe" usemap="#Workmap">
       <map name="Workmap">
