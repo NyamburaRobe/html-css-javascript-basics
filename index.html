@@ -49,8 +49,14 @@
     <div style="border: solid black; padding: 20px;">Hello World!</div>
     <h1> This is a<span style="color: blue;"> blue</span> heading</h1>
     <p>This is a table </p>
-    <button type="button">Click Me!</button>
-   <table style="width: 70%;" >
+    <button type="button" onclick="myFunction()">Click Me!</button>
+  <p id="demo"> This is a demontration</p>
+  <script>
+      function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello  Javascript";
+      }
+  </script>
+    <table style="width: 70%;" >
     <tr>
         <th>First Name</th>
         <th> Second Name</th>
